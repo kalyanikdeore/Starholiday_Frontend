@@ -9,6 +9,7 @@ import starlogo2 from "../../assets/Images/starlogo2.png";
 
 // ✅ Nav Items
 const navItems = [
+  { label: "HOME", path: "/home" },
   { label: "ABOUT US", path: "/about_hill" },
   {
     label: "LUXURY ROOMS",
@@ -76,12 +77,10 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Navbar */}
+      {/* Navbar - Updated with consistent white background */}
       <nav
-        className={`fixed w-full left-0 transition-all duration-300 z-[1001] ${
-          hideTopBar
-            ? "bg-white/90 shadow-md border-b border-gray-100"
-            : "bg-transparent"
+        className={`fixed w-full bg-white left-0 transition-all duration-300 z-[1401] ${
+          hideTopBar ? "shadow-md border-b border-gray-100" : ""
         }`}
         style={{ top: hideTopBar ? "0px" : "30px" }}
       >
@@ -95,11 +94,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Nav */}
-          <div
-            className={`hidden lg:flex items-center space-x-6 font-medium ${
-              hideTopBar ? "text-black" : "text-white"
-            }`}
-          >
+          <div className="hidden lg:flex items-center space-x-6 font-medium text-black">
             {navItems.map((item, index) => (
               <div
                 key={index}
@@ -166,9 +161,7 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
-              className={`pr-5 transition-colors ${
-                hideTopBar ? "text-black" : "text-white"
-              } hover:text-orange-400`}
+              className="pr-5 transition-colors text-black hover:text-orange-400"
             >
               {isMenuOpen ? <X size={26} /> : <Menu size={26} />}
             </button>
@@ -228,19 +221,8 @@ const Navbar = () => {
                   )}
                 </div>
               ))}
-              {/* Mobile BOOK NOW */}
-              {/* <button
-                className="w-full mt-4 bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md text-sm font-bold"
-                onClick={() => {
-                  navigate("./Bookfrom");
-                  setIsMenuOpen(false);
-                }}
-              >
-                BOOK NOW
-              </button> */}
-              // Your button with onClick handler:
               <button
-                onClick={() => navigate("/")}
+                onClick={() => navigate("/bookform")}
                 className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-md text-sm font-bold transition duration-300"
               >
                 BOOK NOW
