@@ -3,8 +3,9 @@ import React from "react";
 import AboutUsSection from "./AboutUsSection";
 import LuxuryRooms from "./LuxuryRooms";
 import Amenities from "./Amenities";
-
-import VideoSection from "./VideoSection";
+// import VideoSection from "./VideoSection";
+// import VideoSection from "./VideoSection";
+import { VideoSection } from "./VideoSection"; // adjust path if needed
 import HotelBookingCard from "./HotelBookingCard";
 import PlanAVisit from "./PlanAVisit";
 import Testimonials from "./Testimonials";
