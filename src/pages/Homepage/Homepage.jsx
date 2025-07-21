@@ -3,8 +3,8 @@ import React from "react";
 import AboutUsSection from "./AboutUsSection";
 import LuxuryRooms from "./LuxuryRooms";
 import Amenities from "./Amenities";
-import HotelStats from "./HotelStats";
-import { VideoSection } from "./Videosection";
+
+import VideoSection from "./VideoSection";
 import HotelBookingCard from "./HotelBookingCard";
 import PlanAVisit from "./PlanAVisit";
 import Testimonials from "./Testimonials";
