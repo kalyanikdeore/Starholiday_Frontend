@@ -1,6 +1,5 @@
 import React from "react";
-import shbg from "../../assets/Images/shbg.jpg";
-import hvideo from "../../assets/Images/hvideo.mp4";
+
 import saputara from "../../assets/Images/saputara.jpg";
 
 const ShilpiResort = () => {

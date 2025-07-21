@@ -1,5 +1,4 @@
 import React from "react";
-import about from "../../assets/Images/about.jpg";
 
 const ShilpiResort = () => {
   return (

@@ -1,6 +1,5 @@
 import React from "react";
 import restaurant from "../../assets/Images/restaurant.jpeg";
-import shbg from "../../assets/Images/shbg.jpg";
 
 const HotelCard = () => {
   return (

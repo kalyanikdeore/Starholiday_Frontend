@@ -1,5 +1,4 @@
 import React from "react";
-import about from "../../assets/Images/about.jpg"; // optional for background
 
 const stats = [
   { number: 768, label: "GUEST STAY" },

@@ -1,11 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import about from "../../assets/Images/about.jpg";
 
 import familyroom from "../../assets/Images/familyroom.jpg";
 import familyroom2 from "../../assets/Images/familyroom2.jpg";
 import familyroom3 from "../../assets/Images/familyroom3.jpg";
-import familyroom4 from "../../assets/Images/familyroom4.jpg";
 
 const rooms = [
   {

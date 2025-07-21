@@ -1,4 +1,3 @@
-import shbg from "../../assets/Images/shbg.jpg";
 import restaurant from "../../assets/Images/restaurant.jpeg";
 const InquiryForm = () => {
   return (

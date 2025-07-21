@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import familyroom from "../../assets/Images/familyroom.jpg";
 import familyroom2 from "../../assets/Images/familyroom2.jpg";
 import familyroom3 from "../../assets/Images/familyroom3.jpg";
-import familyroom4 from "../../assets/Images/familyroom4.jpg";
-import { shbg } from "../../assets";
 
 // Product Data
 const products = [

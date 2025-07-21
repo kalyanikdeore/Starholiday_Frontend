@@ -1,6 +1,6 @@
 import React from "react";
 import shbg from "../../assets/Images/shbg.jpg";
-import restaurant from "../../assets/Images/restaurant.jpeg";
+
 const AboutUsHero = () => {
   return (
     <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">

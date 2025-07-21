@@ -1,6 +1,5 @@
 import React from "react";
-import shbg from "../../assets/Images/shbg.jpg";
-import about2 from "../../assets/Images/restaurant2.jpeg";
+
 import about3 from "../../assets/Images/restaurant3.jpeg";
 
 const ShilpiResort = () => {

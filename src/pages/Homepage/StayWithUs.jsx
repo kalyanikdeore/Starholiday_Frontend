@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import about from "../../assets/Images/about.jpg";
+
 import restaurant from "../../assets/Images/restaurant.jpeg";
 import restaurant2 from "../../assets/Images/restaurant2.jpeg";
 

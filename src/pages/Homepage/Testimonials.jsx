@@ -1,5 +1,5 @@
 import React from "react";
-import about from "../../assets/Images/about.jpg";
+
 import restaurant2 from "../../assets/Images/restaurant2.jpeg";
 const Testimonials = () => {
   return (
@@ -81,7 +81,7 @@ const Testimonials = () => {
             <p className="text-gray-600">
               Very nice place. Very cooperative staff, food quality is very
               good. prompt service for each n every things. Specially restaurant
-              staff of shilpi hill resort have ever smily welcome to us. We
+              staff of Star Holiday Resort have ever smily welcome to us. We
               enjoying special discount facility. Saputara jana hay to shilpi
               hill resort me hirutara hay. Thank you so much to make our
               holidays remembering...

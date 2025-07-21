@@ -1,5 +1,4 @@
 import React from "react";
-import shbg from "../../assets/Images/shbg.jpg";
 
 const Aboutfac = () => {
   return (
