@@ -108,8 +108,7 @@ const ContactUsPage = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg text-gray-800">Phone</h3>
-                  <p className="text-gray-600 mt-1">8788493783</p>
-                  <p className="text-gray-600">878875799</p>
+                  <p className="text-gray-600 mt-1">9850981210</p>
                 </div>
               </div>
 
@@ -122,9 +121,6 @@ const ContactUsPage = () => {
                   <p className="text-gray-600 mt-1">
                     info@stitchersgarmentsandhomefurnishing.com
                   </p>
-                  <p className="text-gray-600">
-                    sales@stitchersgarmentsandhomefurnishing.com
-                  </p>
                 </div>
               </div>
 
@@ -136,7 +132,7 @@ const ContactUsPage = () => {
                   <h3 className="font-semibold text-lg text-gray-800">
                     WhatsApp
                   </h3>
-                  <p className="text-gray-600 mt-1">8788493783</p>
+                  <p className="text-gray-600 mt-1">+91 98509 81210</p>
                 </div>
               </div>
 
@@ -168,10 +164,7 @@ const ContactUsPage = () => {
               </h3>
             </div>
             <address className="text-gray-600 not-italic pl-14 space-y-2">
-              <p>Gate No. 10/2, Plot No. 1+2+3</p>
-              <p>Khadaki Bk, Taluka Chalisgaon</p>
-              <p>Jalgaon, Maharashtra - 424101</p>
-              <p>India</p>
+              <p>Star Holiday Restro Saputara</p>
             </address>
           </div>
         </motion.div>

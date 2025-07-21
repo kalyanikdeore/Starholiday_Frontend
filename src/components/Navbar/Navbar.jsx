@@ -22,7 +22,7 @@ const navItems = [
   { label: "GALLERY", path: "/gallery" },
   { label: "SAPUTARA", path: "/Saputara" },
   { label: "CONTACT US", path: "/contact_us" },
-  { label: "INQUIRY", path: "/inquiry" },
+  // { label: "INQUIRY", path: "/inquiry" },
 ];
 
 const Navbar = () => {

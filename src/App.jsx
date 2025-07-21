@@ -15,7 +15,7 @@ import AboutFacilitypage from "./pages/AboutFacilitypage/AboutFacilitypage";
 import Gallerypage from "./pages/Gallerypage/Gallerypage";
 import Contactuspage from "./pages/Contactuspage/Contactuspage";
 import { MdContactPage } from "react-icons/md";
-import InquiryForm from "./pages/Inquirypage/Inquirypage";
+// import InquiryForm from "./pages/Inquirypage/Inquirypage";
 // import LuxuryRoom from "./pages/LuxuryRoompage/LuxuryRoom";
 // import LuxuryRoom from "./pages/LuxuryRoom/LuxuryRoom";
 import LFamilyRooms from "./pages/LFamilyRooms/LFamilyRooms";
@@ -38,7 +38,7 @@ function App() {
         <Route path="about_facility" element={<AboutFacilitypage />} />
         <Route path="gallery" element={<Gallerypage />} />
         <Route path="contact_us" element={<Contactuspage />} />
-        <Route path="inquiry" element={<InquiryForm />} />
+        {/* <Route path="inquiry" element={<InquiryForm />} /> */}
         <Route path="luxury_room" element={<LuxuryRoom />} />
         <Route path="family_room" element={<LFamilyRooms />} />
         <Route path="Saputara" element={<Saputarapage />} />
