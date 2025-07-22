@@ -1,6 +1,5 @@
 import React from "react";
 import shbg from "../../assets/Images/shbg.jpg";
-
 const ContactHero = () => {
   return (
     <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
@@ -12,12 +11,11 @@ const ContactHero = () => {
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      <div className="absolute inset-0 bg-opacity-40"></div>
 
       {/* Centered Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-        {/* Fixed text size on all screen sizes */}
-        <h1 className="text-4xl font-bold text-white mt-20 tracking-wide">
+        <h1 className="text-4xl md:text-6xl font-bold text-white mt-29 tracking-wide">
           Contact Us
         </h1>
       </div>
