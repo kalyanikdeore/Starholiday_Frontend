@@ -1,7 +1,14 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 import restaurant2 from "../../assets/Images/restaurant2.jpeg";
+
 const Testimonials = () => {
+  const navigate = useNavigate();
+
+  const handleBookNow = () => {
+    navigate("/booking"); // or whatever your booking page route is
+  };
+
   return (
     <div className="max-w-6xl mx-auto p-6 font-sans bg-white text-gray-800">
       <h2 className="text-4xl text-blue-900 font-bold mb-8 text-center">
@@ -88,7 +95,10 @@ const Testimonials = () => {
             </p>
           </div>
           <div className="pt-4">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-8 mb-8 text-sm shadow-md transition-colors duration-300">
+            <button
+              onClick={handleBookNow}
+              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-8 mb-8 text-sm shadow-md transition-colors duration-300"
+            >
               BOOK NOW
             </button>
           </div>

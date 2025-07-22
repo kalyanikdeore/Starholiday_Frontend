@@ -37,7 +37,7 @@ const ShilpiResort = () => {
 
       {/* Button Group */}
       <div className="flex flex-wrap justify-center gap-4 mt-6">
-        <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-1 px-6 rounded-lg shadow-md transition duration-300">
+        {/* <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-1 px-6 rounded-lg shadow-md transition duration-300">
           Online Book
         </button>
         <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300">
@@ -45,7 +45,7 @@ const ShilpiResort = () => {
         </button>
         <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300">
           Packages
-        </button>
+        </button> */}
       </div>
     </div>
   );
