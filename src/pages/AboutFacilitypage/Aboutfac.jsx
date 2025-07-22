@@ -2,7 +2,7 @@ import React from "react";
 
 const Aboutfac = () => {
   return (
-    <div className="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-md">
+    <div className="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-md ">
       {/* Header */}
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold text-gray-800 mb-2">About Us</h1>

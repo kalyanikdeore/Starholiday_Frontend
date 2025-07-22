@@ -20,7 +20,7 @@ const FacilityGarden = () => {
 
           {/* Content - higher z-index to ensure it stays above */}
           <div className="lg:w-1/2 relative z-30">
-            <div className="bg-white p-8 rounded-xl shadow-lg relative z-40">
+            <div className="bg-white p-8 rounded-xl  relative z-40">
               <h3 className="text-4xl font-bold text-blue-900 mb-3 relative z-50">
                 <span className="text-amber-500">Garden</span> & Big Lounge
               </h3>

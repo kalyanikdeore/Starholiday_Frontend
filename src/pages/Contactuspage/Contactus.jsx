@@ -118,9 +118,7 @@ const ContactUsPage = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg text-gray-800">Email</h3>
-                  <p className="text-gray-600 mt-1">
-                    info@stitchersgarmentsandhomefurnishing.com
-                  </p>
+                  <p className="text-gray-600 mt-1">starholiday@gmail.com</p>
                 </div>
               </div>
 

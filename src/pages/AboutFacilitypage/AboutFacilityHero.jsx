@@ -16,7 +16,7 @@ const AboutUsHero = () => {
 
       {/* Centered Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-wide">
+        <h1 className="text-4xl md:text-6xl font-bold text-white mt-20 tracking-wide">
           ABOUT FACILITIES
         </h1>
       </div>

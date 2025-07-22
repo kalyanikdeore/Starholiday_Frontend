@@ -73,7 +73,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="border-t border-[#fff1f1] pt-8 pb-4">
           <div className="flex flex-col md:flex-row justify-between items-center text-[15px]">
-            <div className="flex flex-wrap justify-center gap-4 mb-4 md:mb-0">
+            {/* <div className="flex flex-wrap justify-center gap-4 mb-4 md:mb-0">
               {[
                 "Terms of Use",
                 "Privacy Policy",
@@ -88,10 +88,12 @@ const Footer = () => {
                   {item}
                 </a>
               ))}
+            </div> */}
+            <div className="flex flex-wrap justify-center gap-4 mb-4 md:mb-0">
+              <p>© 2025 Copyright: Star Holiday Resort All Rights Reserved.</p>
             </div>
             <p className="text-center md:text-right">
-              Copyright © 2022 by Star Holiday Resort. Web Design By Rich System
-              Solution Nashik
+              Web Design By Rich System Solution Nashik
             </p>
           </div>
         </div>
