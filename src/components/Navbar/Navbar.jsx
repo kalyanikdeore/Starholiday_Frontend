@@ -50,9 +50,9 @@ const Navbar = () => {
       <div
         className={`text-sm transition-transform duration-500 ${
           hideTopBar ? "-translate-y-full" : "translate-y-0"
-        } fixed top-0 left-0 w-full z-[1000] border-b border-gray-200 bg-white`}
+        } fixed top-0 left-0 w-full z-[1000] border-b border-gray-200 bg-blue-950`}
       >
-        <div className="max-w-screen-xl mx-auto px-4 flex justify-between items-center py-2 text-gray-800">
+        <div className="max-w-screen-xl mx-auto px-4 flex justify-between items-center py-2 text-white">
           <div className="flex items-center space-x-4 text-xs md:text-sm">
             <span>🌤️ 18 °C</span>
             <span>📍 Star Holiday Resort, Saputara.</span>
