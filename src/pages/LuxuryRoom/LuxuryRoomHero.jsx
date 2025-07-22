@@ -1,8 +1,9 @@
 import React from "react";
 import shbg from "../../assets/Images/shbg.jpg";
-const GalleryHero = () => {
+
+const ContactHero = () => {
   return (
-    <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
+    <div className="relative w-full h-[300px] overflow-hidden">
       {/* Background Image */}
       <img
         src={shbg}
@@ -15,12 +16,12 @@ const GalleryHero = () => {
 
       {/* Centered Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-4xl md:text-6xl font-bold text-white mt-20 tracking-wide">
-          6 BEDDED FAMILY ROOMS
+        <h1 className="text-4xl font-bold text-white mt-34 tracking-wide">
+          6 BEDDED FAMILY ROOM
         </h1>
       </div>
     </div>
   );
 };
 
-export default GalleryHero;
+export default ContactHero;

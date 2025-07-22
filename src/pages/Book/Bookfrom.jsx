@@ -1,4 +1,11 @@
 import { useState } from "react";
+import {
+  FaUser,
+  FaCalendarAlt,
+  FaPhoneAlt,
+  FaBed,
+  FaCalendarDay,
+} from "react-icons/fa";
 
 const BookingForm = () => {
   const [formData, setFormData] = useState({
@@ -7,7 +14,7 @@ const BookingForm = () => {
     checkInDate: "",
     phoneNumber: "",
     roomType: "",
-    selectedDays: [],
+    selectedDay: "",
   });
 
   const handleChange = (e) => {
@@ -18,19 +25,10 @@ const BookingForm = () => {
     }));
   };
 
-  const handleDaySelect = (day) => {
-    setFormData((prev) => {
-      const newSelectedDays = prev.selectedDays.includes(day)
-        ? prev.selectedDays.filter((d) => d !== day)
-        : [...prev.selectedDays, day];
-      return { ...prev, selectedDays: newSelectedDays };
-    });
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    // Add your form submission logic here
+    // Add API call or other logic here
   };
 
   const days = [
@@ -42,54 +40,50 @@ const BookingForm = () => {
     "Friday",
     "Saturday",
   ];
+  const roomTypes = ["2 Beded", "4 Beded", "6 Beded"];
 
   return (
-    <div className="max-w-3xl mx-auto p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl shadow-lg">
-      <h1 className="text-3xl font-bold text-center text-indigo-700 mb-6">
-        Booking Now
-      </h1>
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 flex items-center justify-center p-4">
+      <div className="max-w-3xl mt-33 w-full mx-auto p-8 bg-white rounded-3xl shadow-2xl border border-indigo-100">
+        <h1 className="text-4xl font-extrabold text-center text-indigo-700 mb-2 tracking-tight">
+          Book Your Stay
+        </h1>
+        <p className="text-center text-sm text-gray-500 mb-8">
+          Complete the form to reserve your room.
+        </p>
 
-      <form onSubmit={handleSubmit} className="space-y-6">
-        <div>
-          <p className="text-sm text-gray-500 mb-4">
-            * Indicates required field
-          </p>
-
+        <form onSubmit={handleSubmit} className="space-y-6">
           {/* Name Section */}
-          <div className="mb-6">
-            <label className="block text-gray-700 font-medium mb-2">
-              Name*
+          <div>
+            <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+              <FaUser /> Full Name*
             </label>
-            <div className="flex space-x-4">
-              <div className="flex-1">
-                <input
-                  type="text"
-                  name="firstName"
-                  placeholder="First"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
-                />
-              </div>
-              <div className="flex-1">
-                <input
-                  type="text"
-                  name="lastName"
-                  placeholder="Last"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
-                />
-              </div>
+            <div className="flex gap-4">
+              <input
+                type="text"
+                name="firstName"
+                placeholder="First Name"
+                value={formData.firstName}
+                onChange={handleChange}
+                required
+                className="w-1/2 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
+              />
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Last Name"
+                value={formData.lastName}
+                onChange={handleChange}
+                required
+                className="w-1/2 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
+              />
             </div>
           </div>
 
-          {/* Date Check-in */}
-          <div className="mb-6">
-            <label className="block text-gray-700 font-medium mb-2">
-              Date Check in DD / MM / YY*
+          {/* Check-in Date */}
+          <div>
+            <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+              <FaCalendarAlt /> Check-in Date*
             </label>
             <input
               type="date"
@@ -97,89 +91,79 @@ const BookingForm = () => {
               value={formData.checkInDate}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
             />
           </div>
 
-          <div className="border-t border-gray-200 my-6"></div>
-
           {/* Phone Number */}
-          <div className="mb-6">
-            <label className="block text-gray-700 font-medium mb-2">
-              Phone Number*
+          <div>
+            <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+              <FaPhoneAlt /> Phone Number*
             </label>
             <input
               type="tel"
               name="phoneNumber"
               value={formData.phoneNumber}
               onChange={handleChange}
+              placeholder="+91 XXXXXXXXXX"
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
-              placeholder="+1 (___) ___-____"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
             />
           </div>
 
           {/* Room Type */}
-          <div className="mb-6">
-            <label className="block text-gray-700 font-medium mb-2">
-              Required Room*
-            </label>
-            <div className="grid grid-cols-2 gap-3">
-              {["2 Beded", "4 Beded", "6 Beded"].map((room) => (
-                <button
-                  key={room}
-                  type="button"
-                  onClick={() =>
-                    handleChange({ target: { name: "roomType", value: room } })
-                  }
-                  className={`py-2 px-3 rounded-lg border transition ${
-                    formData.roomType === room
-                      ? "bg-indigo-600 text-white border-indigo-600"
-                      : "bg-white border-gray-300 hover:border-indigo-400"
-                  }`}
-                >
-                  {room}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="border-t border-gray-200 my-6"></div>
-
-          {/* Days Selection */}
           <div>
-            <label className="block text-gray-700 font-medium mb-2">
-              Choose Any*
+            <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+              <FaBed /> Room Type*
             </label>
-            <div className="grid grid-cols-3 gap-3">
-              {days.map((day) => (
-                <button
-                  key={day}
-                  type="button"
-                  onClick={() => handleDaySelect(day)}
-                  className={`py-2 px-3 rounded-lg border transition ${
-                    formData.selectedDays.includes(day)
-                      ? "bg-purple-600 text-white border-purple-600"
-                      : "bg-white border-gray-300 hover:border-purple-400"
-                  }`}
-                >
-                  {day}
-                </button>
+            <select
+              name="roomType"
+              value={formData.roomType}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-indigo-500"
+            >
+              <option value="">Select Room Type</option>
+              {roomTypes.map((room) => (
+                <option key={room} value={room}>
+                  {room}
+                </option>
               ))}
-            </div>
+            </select>
           </div>
 
-          <div className="border-t border-gray-200 my-6"></div>
+          {/* Day Selection */}
+          <div>
+            <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+              <FaCalendarDay /> Choose Any Day*
+            </label>
+            <select
+              name="selectedDay"
+              value={formData.selectedDay}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-purple-500"
+            >
+              <option value="">Select Day</option>
+              {days.map((day) => (
+                <option key={day} value={day}>
+                  {day}
+                </option>
+              ))}
+            </select>
+          </div>
 
           {/* Submit Button */}
-          <button
-            type="submit"
-            className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-4 rounded-lg font-medium hover:from-indigo-700 hover:to-purple-700 transition shadow-md hover:shadow-lg"
-          >
-            Submit
-          </button>
-        </div>
-      </form>
+          <div className="pt-4">
+            <button
+              type="submit"
+              className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold py-3 px-4 rounded-lg shadow-md hover:shadow-xl hover:from-indigo-700 hover:to-purple-700 transition-all duration-300"
+            >
+              Submit Booking
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

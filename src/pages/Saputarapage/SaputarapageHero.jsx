@@ -1,8 +1,9 @@
 import React from "react";
 import shbg from "../../assets/Images/shbg.jpg";
-const SaputarapageHero = () => {
+
+const ContactHero = () => {
   return (
-    <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
+    <div className="relative w-full h-[300px] overflow-hidden">
       {/* Background Image */}
       <img
         src={shbg}
@@ -15,7 +16,7 @@ const SaputarapageHero = () => {
 
       {/* Centered Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-4xl md:text-6xl font-bold text-white mt-20 tracking-wide">
+        <h1 className="text-4xl font-bold text-white mt-34 tracking-wide">
           SAPUTARA
         </h1>
       </div>
@@ -23,4 +24,4 @@ const SaputarapageHero = () => {
   );
 };
 
-export default SaputarapageHero;
+export default ContactHero;
