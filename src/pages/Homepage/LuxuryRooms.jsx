@@ -7,7 +7,7 @@ import familyroom3 from "../../assets/Images/familyroom3.jpg";
 
 const rooms = [
   {
-    title: "SUPER  AC",
+    title: "SUPER DELUXE AC",
     image: familyroom,
   },
   {
